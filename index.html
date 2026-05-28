@@ -3,50 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Prueba de GitHub Pages exitosa!</title>
+    <title>Academia de Cultura Digital - Portal Académico</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        /* Estilos Generales */
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .container {
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Encabezado / Banner */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 20px;
             text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #2da44e; /* El verde clásico de GitHub */
+
+        header h1 {
+            font-size: 2.5rem;
             margin-bottom: 10px;
         }
-        p {
-            font-size: 1.2rem;
-            color: #57606a;
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
         }
-        .rocket {
-            font-size: 3rem;
-            animation: float 2s ease-in-out infinite;
+
+        /* Barra de Navegación */
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2a5298;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Sección de Introducción */
+        .intro-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .intro-section h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2a5298;
+            padding-bottom: 5px;
+        }
+
+        /* Cuadrícula de Recursos / Módulos */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-top: 5px solid #2a5298;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #222;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .card .btn {
+            display: inline-block;
+            background-color: #1e3c72;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .card .btn:hover {
+            background-color: #2a5298;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="rocket">🚀</div>
-        <h1>¡Funciona a la perfección!</h1>
-        <p>Tu sitio web ya está alojado con éxito en GitHub Pages.</p>
-    </div>
+    <header>
+        <h1>Academia de Cultura Digital</h1>
+        <p>Recursos Didácticos, Progresiones e Intenciones Formativas</p>
+    </header>
 
-</body>
-</html>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#progresiones">Progresiones</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="inicio" class="intro-section">
+            <h2>Bienvenidos al Portal Informativo</h2>
+            <p>Este espacio está dedicado a la gestión de contenidos de la Academia de Cultura Digital. Aquí los docentes y estudiantes pueden consultar el marco curricular, las progresiones de aprendizaje y descargar las secuencias didácticas necesarias para el semestre.</p>
+        </section>
+
+        <h2 style="color: #1e3c72; margin-bottom: 20px;" id="progresiones">Módulos de Aprendizaje</h2>
+        
+        <div class="grid">
+            
+            <div class="card">
+                <h3>🌐 1. Ciudadanía Digital</h3>
+                <p>Identifica y aplica la normatividad que regula el uso del ciberespacio y servicios digitales, cuidando la salud digital y el medio ambiente.</p>
+                <a href="#" class="btn">Ver Material</a>
+            </div>
+
+            <div class="card">
+                <h3>💻 2. Herramientas de Productividad</h3>
+                <p>Uso eficiente de procesadores de texto, hojas de cálculo y
