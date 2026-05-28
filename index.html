@@ -3,179 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia de Cultura Digital - Portal Académico</title>
-    <style>
-        /* Estilos Generales */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f6f9;
-            color: #333;
-        }
-
-        /* Encabezado / Banner */
-        header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        /* Barra de Navegación */
-        nav {
-            background-color: #222;
-            display: flex;
-            justify-content: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #2a5298;
-        }
-
-        /* Contenedor Principal */
-        .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        /* Sección de Introducción */
-        .intro-section {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }
-
-        .intro-section h2 {
-            color: #1e3c72;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #2a5298;
-            padding-bottom: 5px;
-        }
-
-        /* Cuadrícula de Recursos / Módulos */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            border-top: 5px solid #2a5298;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .card h3 {
-            color: #222;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .card p {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-
-        .card .btn {
-            display: inline-block;
-            background-color: #1e3c72;
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: background 0.2s;
-        }
-
-        .card .btn:hover {
-            background-color: #2a5298;
-        }
-
-        /* Pie de página */
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-            font-size: 0.9rem;
-        }
-    </style>
+    <title>Cultura Digital I</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-
     <header>
-        <h1>Academia de Cultura Digital</h1>
-        <p>Recursos Didácticos, Progresiones e Intenciones Formativas</p>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Logo_CECyTE_M%C3%A9xico.png" alt="Logo CECyTE" id="cecyte-logo">
+            <h1>Academia de Cultura Digital</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#progresiones">Progresiones</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#progresiones">Progresiones</a>
-        <a href="#recursos">Recursos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <section id="banner">
+        <div class="banner-content">
+            <h2>Cultura Digital I</h2>
+            <p>Portal de Recursos Didácticos e Intenciones Formativas</p>
+        </div>
+    </section>
 
-    <div class="container">
-        
-        <section id="inicio" class="intro-section">
-            <h2>Bienvenidos al Portal Informativo</h2>
-            <p>Este espacio está dedicado a la gestión de contenidos de la Academia de Cultura Digital. Aquí los docentes y estudiantes pueden consultar el marco curricular, las progresiones de aprendizaje y descargar las secuencias didácticas necesarias para el semestre.</p>
+    <main class="container">
+        <section id="inicio" class="card">
+            <h2>Bienvenida</h2>
+            <p>Bienvenido al portal oficial de la Academia de Cultura Digital del CECyTE BCS. Este espacio está diseñado para proveer a docentes y estudiantes los materiales, guías y secuencias didácticas necesarias para el desarrollo de las competencias digitales correspondientes al nuevo Marco Curricular Común de la Educación Media Superior (MCCEMS).</p>
         </section>
 
-        <h2 style="color: #1e3c72; margin-bottom: 20px;" id="progresiones">Módulos de Aprendizaje</h2>
-        
-        <div class="grid">
-            
-            <div class="card">
-                <h3>🌐 1. Ciudadanía Digital</h3>
-                <p>Identifica y aplica la normatividad que regula el uso del ciberespacio y servicios digitales, cuidando la salud digital y el medio ambiente.</p>
-                <a href="#" class="btn">Ver Material</a>
+        <section id="progresiones">
+            <h2>Progresiones de Aprendizaje</h2>
+            <div class="grid">
+                <div class="item-card">
+                    <i class="fa-solid fa-earth-americas icon"></i>
+                    <h3>Ciudadanía Digital</h3>
+                    <p>Identifica y aplica la normatividad que regula el uso del ciberespacio y servicios digitales, cuidando la identidad y la seguridad en la red.</p>
+                </div>
+                <div class="item-card">
+                    <i class="fa-solid fa-laptop-code icon"></i>
+                    <h3>Tecnología e Información</h3>
+                    <p>Uso eficiente de herramientas de productividad y software educativo para la resolución de problemáticas del entorno académico y social.</p>
+                </div>
+                <div class="item-card">
+                    <i class="fa-solid fa-brain icon"></i>
+                    <h3>Pensamiento Computacional</h3>
+                    <p>Reconoce características de una situación o fenómeno utilizando algoritmos y herramientas digitales para establecer alternativas de solución.</p>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="card">
-                <h3>💻 2. Herramientas de Productividad</h3>
-                <p>Uso eficiente de procesadores de texto, hojas de cálculo y
+    <footer>
+        <p>&copy; 2026 Academia de Cultura Digital - CECYTE BCS</p>
+    </footer>
+</body>
+</html>
